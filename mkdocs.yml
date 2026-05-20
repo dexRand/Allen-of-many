@@ -14,6 +14,9 @@ plugins:
   - search
   - awesome-pages
   - section-index
+  - redirects:
+      redirect_maps:
+        index.md: ALLEN.md
 
 extra:
   backlinks:
