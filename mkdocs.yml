@@ -20,13 +20,14 @@ extra:
     enabled: true
 
 theme:
-  name: material
+  name: windmill-dark
   language: it
-  features:
-    - navigation.sections
-    - navigation.expand
-    - search.suggest
-    - search.highlight
+  # static_templates:
+  #   - 404.html
+  # include_search_page: true
+  # history_buttons: true
+  # article_nav_top: true
+  # article_nav_bottom: true
 
 markdown_extensions:
   - attr_list
