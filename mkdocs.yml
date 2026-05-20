@@ -29,8 +29,8 @@ theme:
     - search.highlight
   palette:
     scheme: slate
-    primary: indigo
-    accent: indigo
+    primary: red
+    accent: red
 
 markdown_extensions:
   - attr_list
