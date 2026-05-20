@@ -1,0 +1,40 @@
+name: Deploy documentazione
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy_docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copia repo nella macchina
+        uses: actions/checkout@v4
+
+      - name: Installa Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Installa dipendenze MkDocs
+        run: pip install -r requirements.txt
+
+      - name: Collega note vault per MkDocs
+        run: |
+          mkdir -p content
+          ln -sfn "${{ github.workspace }}/Canon" content/Canon
+          ln -sfn "${{ github.workspace }}/404" content/404
+          ln -sfn "${{ github.workspace }}/zz_CIcli" content/zz_CIcli
+          if [ -d zzz_Attachments ]; then
+            ln -sfn "${{ github.workspace }}/zzz_Attachments" content/zzz_Attachments
+          fi
+          if [ -f ALLEN.md ]; then
+            ln -sfn "${{ github.workspace }}/ALLEN.md" content/ALLEN.md
+          fi
+
+      - name: Compila e pubblica su GitHub Pages
+        run: mkdocs gh-deploy --force

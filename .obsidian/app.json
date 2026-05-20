@@ -2,5 +2,15 @@
   "newFileLocation": "current",
   "newFileFolderPath": "Non Apparsi",
   "attachmentFolderPath": "zzz_Attachments",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "scripts/",
+    "hooks/",
+    ".github/",
+    "content/",
+    "site/",
+    "mkdocs.yml",
+    "requirements.txt",
+    ".gitignore"
+  ]
 }

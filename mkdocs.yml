@@ -1,0 +1,34 @@
+site_name: Allen of Many
+site_url: https://dexrand.github.io/Allen-of-many/
+repo_url: https://github.com/dexRand/Allen-of-many
+repo_name: dexRand/Allen-of-many
+
+# Cartella generata in CI (symlink alle note); vedi .github/workflows/deploy.yml
+docs_dir: content
+
+hooks:
+  - hooks/backlinks.py
+
+plugins:
+  - search
+  - awesome-pages
+  - section-index
+  - roamlinks
+
+extra:
+  backlinks:
+    enabled: true
+    heading: Menzioni
+
+theme:
+  name: material
+  language: it
+  features:
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
