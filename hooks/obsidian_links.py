@@ -85,7 +85,7 @@ def _replace_embed(match: re.Match, page, docs_dir: Path) -> str:
     width = match.group(2)
     asset = _pick_asset(_asset_keys(name))
     if not asset:
-        return match.group(0)
+        return Path(name).stem
 
     href = _rel_href(page.file.src_path, asset, docs_dir)
     alt = Path(name).stem
@@ -110,7 +110,7 @@ def _replace_wikilink(match: re.Match, page, docs_dir: Path) -> str:
             href = _rel_href(page.file.src_path, asset, docs_dir)
             label = alias or Path(target).stem
             return f"![{label}]({href})"
-        return match.group(0)
+        return alias or Path(target).stem
 
     md_path = _pick_md_page(target)
     if md_path:
@@ -126,7 +126,8 @@ def _replace_wikilink(match: re.Match, page, docs_dir: Path) -> str:
         label = alias or Path(target).stem
         return f"[{label}]({href})"
 
-    return match.group(0)
+    # Nota non ancora nel repo: testo piano (niente [[ ]])
+    return alias or target
 
 
 def on_page_markdown(markdown, page, config, files, **kwargs):
