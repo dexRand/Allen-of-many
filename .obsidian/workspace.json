@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "9983b36e4e60d356",
+    "type": "split",
+    "children": [
+      {
+        "id": "504f329c42d530d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f1cc234887885aa0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ALLEN.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "ALLEN"
+            }
+          },
+          {
+            "id": "ad37d257eacf8e96",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "17a8e7578be57748",
+    "type": "split",
+    "children": [
+      {
+        "id": "0910ca228c212978",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b24b204b7992187c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "299d7a50045dfb8f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "9986ce5ebc411b74",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8ae21437426f44f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "92dd24953b4a7fe9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ee38d6d2ea8a6917",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TAG/___ALLEN___.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for ___ALLEN___"
+            }
+          },
+          {
+            "id": "c3631fdf4ceab3be",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "TAG/___ALLEN___.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from ___ALLEN___"
+            }
+          },
+          {
+            "id": "676c16947da6a23f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b729cf9d0dc5d2d5",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "75c21b7e6788784c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "TAG/___ALLEN___.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of ___ALLEN___"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "ad37d257eacf8e96",
+  "lastOpenFiles": [
+    "ALLEN.md",
+    "404/Davy John.md",
+    "zz_CIcli/Primo.md",
+    "Canon/Allen Primale.md",
+    "404/ДLŁƎи Бlдde Ø0.md",
+    "Canon/+canon.md",
+    "Canon/Allen Blade - il Primo.md",
+    "Canon/Allen della Valle Putrefatta.md",
+    "Canon/John Diskovich.md",
+    "zz_CIcli/the last of US - Marvel WW2.md",
+    "zzz_Attachments/Pasted image 20260319004759.png",
+    "zz_CIcli/Presente.md",
+    "zz_CIcli/Primale.md",
+    "zzz_Attachments/Pasted image 20260319002858.png",
+    "TAG",
+    "zz_CIcli/+ciclo.md",
+    "zz_CIcli",
+    "404/+404_not_found.md",
+    "zzz_Attachments/Pasted image 20260318232934.png",
+    "zzz_Attachments/Pasted image 20260318232555.png",
+    "zzz_Attachments",
+    "TAG",
+    "404",
+    "Canon"
+  ]
+}
