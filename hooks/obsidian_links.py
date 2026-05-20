@@ -40,7 +40,7 @@ def on_files(files, config):
     if not docs_dir.is_dir():
         return
 
-    for root, _, names in os.walk(docs_dir):
+    for root, _, names in os.walk(docs_dir, followlinks=True):
         for name in names:
             rel = Path(root, name).relative_to(docs_dir).as_posix()
             for key in _asset_keys(name):
@@ -55,8 +55,22 @@ def on_files(files, config):
 def _pick_asset(keys: set[str]) -> str | None:
     for key in keys:
         matches = _ASSETS.get(key)
-        if matches:
-            return matches[0]
+        if not matches:
+            continue
+        # Preferisci note .md rispetto ad allegati omonimi
+        for rel in matches:
+            if rel.endswith(".md"):
+                return rel
+        return matches[0]
+    return None
+
+
+def _pick_md_page(target: str) -> str | None:
+    """Risolve [[Nota]] usando l'indice pagine MkDocs."""
+    for key in _asset_keys(target):
+        for src_path in _MD_PAGES:
+            if _norm(Path(src_path).stem) == key:
+                return src_path
     return None
 
 
@@ -89,21 +103,22 @@ def _replace_wikilink(match: re.Match, page, docs_dir: Path) -> str:
     if target.startswith("+"):
         return alias or target
 
-    asset = _pick_asset(_asset_keys(target))
     ext = Path(target).suffix.lower()
+    if ext in _IMAGE_EXT:
+        asset = _pick_asset(_asset_keys(target))
+        if asset:
+            href = _rel_href(page.file.src_path, asset, docs_dir)
+            label = alias or Path(target).stem
+            return f"![{label}]({href})"
+        return match.group(0)
 
-    if asset and ext in _IMAGE_EXT:
-        href = _rel_href(page.file.src_path, asset, docs_dir)
-        label = alias or Path(target).stem
-        return f"![{label}]({href})"
-
-    if asset and asset.endswith(".md"):
-        asset_key = asset.replace("\\", "/")
-        src_file = _MD_PAGES.get(asset_key)
+    md_path = _pick_md_page(target)
+    if md_path:
+        src_file = _MD_PAGES.get(md_path)
         if src_file:
             href = get_relative_url(src_file.url, page.url)
         else:
-            href = _rel_href(page.file.src_path, asset_key, docs_dir)
+            href = _rel_href(page.file.src_path, md_path, docs_dir)
         if anchor:
             href += "#" + re.sub(
                 r"[^\w\u4e00-\u9fff\- ]", "", anchor.strip().lower()

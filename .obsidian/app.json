@@ -6,6 +6,7 @@
   "userIgnoreFilters": [
     "scripts/",
     "hooks/",
+    "**/.pages",
     ".github/",
     "content/",
     "site/",

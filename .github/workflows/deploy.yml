@@ -1,5 +1,4 @@
 # Pubblica su branch gh-pages (Settings → Pages → Deploy from branch → gh-pages / root).
-# Non usare "GitHub Actions" come sorgente Pages con mkdocs gh-deploy.
 
 name: Deploy documentazione
 
@@ -31,17 +30,16 @@ jobs:
       - name: Installa dipendenze MkDocs
         run: pip install -r requirements.txt
 
-      - name: Collega note vault per MkDocs
+      - name: Prepara content per MkDocs
         run: |
           mkdir -p content
-          ln -sfn "${{ github.workspace }}/Canon" content/Canon
-          ln -sfn "${{ github.workspace }}/404" content/404
-          ln -sfn "${{ github.workspace }}/zz_CIcli" content/zz_CIcli
-          if [ -d zzz_Attachments ]; then
-            ln -sfn "${{ github.workspace }}/zzz_Attachments" content/zzz_Attachments
-          fi
+          for dir in Canon 404 zz_CIcli zzz_Attachments; do
+            if [ -d "$dir" ]; then
+              cp -a "$dir" "content/$dir"
+            fi
+          done
           if [ -f ALLEN.md ]; then
-            ln -sfn "${{ github.workspace }}/ALLEN.md" content/ALLEN.md
+            cp ALLEN.md content/ALLEN.md
           fi
 
       - name: Configura Git per gh-deploy
@@ -49,5 +47,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Compila e pubblica su gh-pages
+      - name: Compila sito
+        run: mkdocs build
+
+      - name: Verifica wikilink convertiti
+        run: |
+          if grep -r '\[\[[^]]\+\]\]' site/ --include='*.html' | grep -v '__md_edit'; then
+            echo "::error::Wikilink Obsidian non convertiti nel sito generato."
+            exit 1
+          fi
+
+      - name: Pubblica su gh-pages
         run: mkdocs gh-deploy --force --remote-name origin --remote-branch gh-pages
