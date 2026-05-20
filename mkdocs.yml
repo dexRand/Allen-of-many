@@ -7,8 +7,8 @@ repo_name: dexRand/Allen-of-many
 docs_dir: content
 
 hooks:
-  - hooks/obsidian_links.py
-  - hooks/backlinks.py
+  - .hooks/obsidian_links.py
+  - .hooks/backlinks.py
 
 plugins:
   - search

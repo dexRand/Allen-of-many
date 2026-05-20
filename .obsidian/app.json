@@ -4,8 +4,8 @@
   "attachmentFolderPath": "zzz_Attachments",
   "alwaysUpdateLinks": true,
   "userIgnoreFilters": [
-    "scripts/",
-    "hooks/",
+    ".scripts/",
+    ".hooks/",
     "**/.pages",
     ".github/",
     "content/",
