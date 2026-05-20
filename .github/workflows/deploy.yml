@@ -1,9 +1,15 @@
+# Pubblica su branch gh-pages (Settings → Pages → Deploy from branch → gh-pages / root).
+# Non usare "GitHub Actions" come sorgente Pages con mkdocs gh-deploy.
+
 name: Deploy documentazione
 
 on:
   push:
     branches:
       - main
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 permissions:
   contents: write
@@ -13,10 +19,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Copia repo nella macchina
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Installa Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.x"
 
@@ -36,5 +44,10 @@ jobs:
             ln -sfn "${{ github.workspace }}/ALLEN.md" content/ALLEN.md
           fi
 
-      - name: Compila e pubblica su GitHub Pages
-        run: mkdocs gh-deploy --force
+      - name: Configura Git per gh-deploy
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Compila e pubblica su gh-pages
+        run: mkdocs gh-deploy --force --remote-name origin --remote-branch gh-pages
