@@ -7,18 +7,17 @@ repo_name: dexRand/Allen-of-many
 docs_dir: content
 
 hooks:
+  - hooks/obsidian_links.py
   - hooks/backlinks.py
 
 plugins:
   - search
   - awesome-pages
   - section-index
-  - roamlinks
 
 extra:
   backlinks:
     enabled: true
-    heading: Menzioni
 
 theme:
   name: material

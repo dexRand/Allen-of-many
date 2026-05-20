@@ -84,8 +84,7 @@ def on_files(files, config):
 
 
 def on_page_markdown(markdown, page, config, files, **kwargs):
-    """Aggiunge la sezione Menzioni con link alle note che puntano qui."""
-    heading = config.extra.get("backlinks", {}).get("heading", "Menzioni")
+    """Elenco in fondo pagina delle note che linkano qui (senza titolo)."""
     if not config.extra.get("backlinks", {}).get("enabled", True):
         return markdown
 
@@ -93,7 +92,7 @@ def on_page_markdown(markdown, page, config, files, **kwargs):
     if not sources:
         return markdown
 
-    lines = ["\n\n---\n", f"## {heading}\n"]
+    lines = ["\n\n"]
     for src_path in sorted(sources, key=lambda p: _page_title(p).casefold()):
         src_file = _PAGES.get(src_path)
         if not src_file:
