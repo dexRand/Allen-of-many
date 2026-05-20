@@ -1,4 +1,5 @@
 mkdocs>=1.6
-mkdocs-windmill-dark
+mkdocs-material
 mkdocs-awesome-pages-plugin>=2.9.2,<3
 mkdocs-section-index
+
