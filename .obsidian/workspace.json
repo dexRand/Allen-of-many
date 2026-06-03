@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "z_Settings/+settings.md",
+                "file": "z_Settings/Io.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "+settings"
+              "title": "Io"
             }
           }
         ],
@@ -220,6 +220,7 @@
   },
   "active": "b1acc1a49b28bd16",
   "lastOpenFiles": [
+    "z_Settings/+settings.md",
     "site/index.html",
     "site/search/search_index.json",
     "site/search",
@@ -230,7 +231,6 @@
     "site/zz_CIcli/Primale/index.html",
     "site/zz_CIcli/Primale",
     "site/zz_CIcli/Presente/index.html",
-    "site/zz_CIcli/Presente",
     "site/assets/images/favicon.png",
     "site/zzz_Attachments/Pasted image 20260319004759.png",
     "site/zzz_Attachments/Pasted image 20260319002858.png",
