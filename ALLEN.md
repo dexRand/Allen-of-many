@@ -1,0 +1,1 @@
+Lista di ogni Allen presente o non presente nel multiverso

@@ -35,10 +35,24 @@
             "id": "ad37d257eacf8e96",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "404/+404_not_found.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "+404_not_found"
             }
           }
         ],
@@ -206,24 +220,25 @@
   },
   "active": "ad37d257eacf8e96",
   "lastOpenFiles": [
-    "ALLEN.md",
-    "404/Davy John.md",
-    "zz_CIcli/Primo.md",
-    "Canon/Allen Primale.md",
-    "404/ДLŁƎи Бlдde Ø0.md",
     "Canon/+canon.md",
+    "zz_CIcli/+ciclo.md",
+    "404/ДLŁƎи Бlдde Ø0.md",
+    "404/The Finallen.md",
+    "404/Davy John.md",
+    "404/+404_not_found.md",
     "Canon/Allen Blade - il Primo.md",
     "Canon/Allen della Valle Putrefatta.md",
+    "Canon/Allen Primale.md",
     "Canon/John Diskovich.md",
+    "ALLEN.md",
+    "zz_CIcli/Primo.md",
     "zz_CIcli/the last of US - Marvel WW2.md",
     "zzz_Attachments/Pasted image 20260319004759.png",
     "zz_CIcli/Presente.md",
     "zz_CIcli/Primale.md",
     "zzz_Attachments/Pasted image 20260319002858.png",
     "TAG",
-    "zz_CIcli/+ciclo.md",
     "zz_CIcli",
-    "404/+404_not_found.md",
     "zzz_Attachments/Pasted image 20260318232934.png",
     "zzz_Attachments/Pasted image 20260318232555.png",
     "zzz_Attachments",

@@ -7,4 +7,4 @@ Ciclo: [[Pirati dei Caraibi]]
 >*"Parte della nave, parte della ciurma."*
 
 - fey che fa i patti con le persone per essere legate alla sua barca
- - 
+- 
