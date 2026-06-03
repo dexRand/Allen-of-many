@@ -1,0 +1,1 @@
+Lista di Tutti i settings in cui appare un Allen

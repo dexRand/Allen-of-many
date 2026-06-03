@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f1cc234887885aa0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ALLEN.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "ALLEN"
-            }
-          },
-          {
             "id": "ad37d257eacf8e96",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "404/+404_not_found.md",
+                "file": "z_Settings/Io.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +28,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "+404_not_found"
+              "title": "Io"
+            }
+          },
+          {
+            "id": "b1acc1a49b28bd16",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "z_Settings/+settings.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "+settings"
             }
           }
         ],
@@ -218,32 +218,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "ad37d257eacf8e96",
+  "active": "b1acc1a49b28bd16",
   "lastOpenFiles": [
-    "Canon/+canon.md",
-    "zz_CIcli/+ciclo.md",
-    "404/ДLŁƎи Бlдde Ø0.md",
-    "404/The Finallen.md",
-    "404/Davy John.md",
-    "404/+404_not_found.md",
-    "Canon/Allen Blade - il Primo.md",
-    "Canon/Allen della Valle Putrefatta.md",
-    "Canon/Allen Primale.md",
-    "Canon/John Diskovich.md",
-    "ALLEN.md",
-    "zz_CIcli/Primo.md",
-    "zz_CIcli/the last of US - Marvel WW2.md",
-    "zzz_Attachments/Pasted image 20260319004759.png",
-    "zz_CIcli/Presente.md",
-    "zz_CIcli/Primale.md",
-    "zzz_Attachments/Pasted image 20260319002858.png",
-    "TAG",
-    "zz_CIcli",
-    "zzz_Attachments/Pasted image 20260318232934.png",
-    "zzz_Attachments/Pasted image 20260318232555.png",
-    "zzz_Attachments",
-    "TAG",
-    "404",
-    "Canon"
+    "site/index.html",
+    "site/search/search_index.json",
+    "site/search",
+    "site/zz_CIcli/the last of US - Marvel WW2/index.html",
+    "site/zz_CIcli/the last of US - Marvel WW2",
+    "site/zz_CIcli/Primo/index.html",
+    "site/zz_CIcli/Primo",
+    "site/zz_CIcli/Primale/index.html",
+    "site/zz_CIcli/Primale",
+    "site/zz_CIcli/Presente/index.html",
+    "site/zz_CIcli/Presente",
+    "site/assets/images/favicon.png",
+    "site/zzz_Attachments/Pasted image 20260319004759.png",
+    "site/zzz_Attachments/Pasted image 20260319002858.png",
+    "site/zzz_Attachments/Pasted image 20260318232934.png",
+    "site/zzz_Attachments/Pasted image 20260318232555.png",
+    "site/zzz_Attachments/zzz_Attachments/Pasted image 20260319004759.png",
+    "site/zzz_Attachments/zzz_Attachments/Pasted image 20260319002858.png",
+    "site/zzz_Attachments/zzz_Attachments/Pasted image 20260318232934.png",
+    "site/zzz_Attachments/zzz_Attachments/Pasted image 20260318232555.png",
+    "content/z_Settings/z_Settings/Io.md",
+    "content/z_Settings/z_Settings/+settings.md",
+    "content/zzz_Attachments/zzz_Attachments/Pasted image 20260319004759.png",
+    "content/zz_CIcli/zz_CIcli/the last of US - Marvel WW2.md",
+    "content/zz_CIcli/zz_CIcli/Primo.md",
+    "content/zz_CIcli/zz_CIcli/Primale.md",
+    "content/zz_CIcli/zz_CIcli/Presente.md",
+    "content/zz_CIcli/zz_CIcli/+ciclo.md",
+    "content/404/404/ДLŁƎи Бlдde Ø0.md",
+    "content/404/404/The Finallen.md",
+    "content/404/404/Davy John.md",
+    "content/404/404/+404_not_found.md",
+    "content/Canon/Canon/John Diskovich.md",
+    "content/Canon/Canon/Allen della Valle Putrefatta.md",
+    "content/Canon/Canon/Allen Primale.md",
+    "content/Canon/Canon/Allen Blade - il Primo.md",
+    "content/Canon/Canon/+canon.md",
+    "content/ALLEN.md",
+    "content/z_Settings/Io.md",
+    "content/z_Settings/+settings.md",
+    "content/zz_CIcli/the last of US - Marvel WW2.md",
+    "content/zz_CIcli/Primo.md",
+    "content/zz_CIcli/Primale.md",
+    "content/zz_CIcli/Presente.md",
+    "content/zz_CIcli/+ciclo.md",
+    "content/404/ДLŁƎи Бlдde Ø0.md"
   ]
 }

@@ -1,1 +1,1 @@
-Lista di tutti i cicli di [[Etiria]] nei quali è  stato presente un Allen
+Lista di tutti i cicli di [[Io]] nei quali è  stato presente un Allen

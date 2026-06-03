@@ -33,7 +33,7 @@ jobs:
       - name: Prepara content per MkDocs
         run: |
           mkdir -p content
-          for dir in Canon 404 zz_CIcli zzz_Attachments; do
+          for dir in Canon 404 z_Settings zz_CIcli zzz_Attachments; do
             if [ -d "$dir" ]; then
               cp -a "$dir" "content/$dir"
             fi
