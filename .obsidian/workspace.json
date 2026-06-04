@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "z_Settings/Io.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Io"
+              "title": "README"
             }
           }
         ],
@@ -220,7 +220,18 @@
   },
   "active": "b1acc1a49b28bd16",
   "lastOpenFiles": [
+    "ALLEN.md",
+    "zz_CIcli/the last of US - Marvel WW2.md",
+    "zz_CIcli/Primo.md",
+    "zz_CIcli/Primale.md",
+    "zz_CIcli/Presente.md",
+    "zz_CIcli/+ciclo.md",
+    "z_Settings/Io.md",
     "z_Settings/+settings.md",
+    "404/ДLŁƎи Бlдde Ø0.md",
+    "404/The Finallen.md",
+    "404/Davy John.md",
+    "404/+404_not_found.md",
     "site/index.html",
     "site/search/search_index.json",
     "site/search",
@@ -254,17 +265,6 @@
     "content/404/404/+404_not_found.md",
     "content/Canon/Canon/John Diskovich.md",
     "content/Canon/Canon/Allen della Valle Putrefatta.md",
-    "content/Canon/Canon/Allen Primale.md",
-    "content/Canon/Canon/Allen Blade - il Primo.md",
-    "content/Canon/Canon/+canon.md",
-    "content/ALLEN.md",
-    "content/z_Settings/Io.md",
-    "content/z_Settings/+settings.md",
-    "content/zz_CIcli/the last of US - Marvel WW2.md",
-    "content/zz_CIcli/Primo.md",
-    "content/zz_CIcli/Primale.md",
-    "content/zz_CIcli/Presente.md",
-    "content/zz_CIcli/+ciclo.md",
-    "content/404/ДLŁƎи Бlдde Ø0.md"
+    "content/Canon/Canon/Allen Primale.md"
   ]
 }

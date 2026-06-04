@@ -8,7 +8,7 @@ Ciclo:  [[the last of US - Marvel WW2]]
 
 - Spore druid
 - è un ciclo in cui è spawnato in un luogo in cui il fungo ha corrotto il suo corpo ed è diventato il paziente 0 dell'invasione dei funghi alla the last of us 
-- il fungo era il risultatp di un esperimento fatto su un meteorite da degli scienziati russi, allen era sepolto sotto la struttura in una cripta dove il fungo è sfuggito
+- il fungo era il risultato di un esperimento fatto su un meteorite da degli scienziati russi, Allen era sepolto sotto la struttura in una cripta dove il fungo è sfuggito
 
 - Si risveglia come un undead e il fungo gli fa credere che per sconfiggere ghirgra deve rianimare corpi
 - ovunque va, le spore arrivano, il mondo viene consumato dalle spore
